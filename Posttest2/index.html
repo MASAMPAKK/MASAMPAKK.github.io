@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu in Flex Container</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://img.freepik.com/free-photo/variety-fresh-tasty-vegetables-dark-background_1220-4537.jpg?t=st=1726662348~exp=1726665948~hmac=c44b88aa459b024e7542fe24da5a5df5ca792f2b2b84544f1dcce01aa1072a1a&w=996');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            background-image: url();
+            padding: 20px;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            flex-basis: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .flex-item {
+            background-color: rgb(255, 255, 0);
+            width: 150px;
+            margin: 10px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+        }
+
+        .menu-header {
+            flex-basis: 100%;
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        u {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgba(204, 0, 204, 0.8);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="logo">
+            <img src="https://github.com/MASAMPAKK/masampakk.github.io/blob/main/Posttest1/logo-resto.jpeg?raw=true" alt="Restaurant Logo" style="max-width: 150px;">
+        </div>
+        <div class="menu-header">Menu</div>
+        <div class="flex-item">
+            Nasi Goreng
+            <img src="https://img.freepik.com/free-photo/sausage-fried-rice-with-tomatoes-carrots-shiitake-mushrooms-plate_1150-27184.jpg?t=st=1726662637~exp=1726666237~hmac=8f83c7c64ad7a15de7932e07878124873df825a585f8a51f465c3b6f88ec3cc1&w=996" alt="Nasi Goreng" style="max-width: 100%; margin-top: 5px;">
+            <div>RP. 25.000</div>
+        </div>
+        <div class="flex-item">
+            Mie Goreng
+            <img src="https://t3.ftcdn.net/jpg/01/62/92/56/240_F_162925619_nVMrrqtstAZHJYUEqD1qBXAgyQ4Q0Yue.jpg" alt="Mie Goreng" style="max-width: 100%; margin-top: 5px;">
+            <div>RP. 25.000</div>
+        </div>
+        <div class="flex-item">
+            Ayam Penyet
+            <img src="" alt="Ayam Penyet" style="max-width: 100%; margin-top: 5px;">
+            <div>RP. 25.000</div>
+        </div>
+        <div class="flex-item">
+            Es Jeruk
+            <img src="" alt="Es Jeruk" style="max-width: 100%; margin-top: 5px;">
+            <div>RP. 7.000</div>
+        </div>
+        <div class="flex-item">
+            Es Milo
+            <img src="" alt="Es Milo" style="max-width: 100%; margin-top: 5px;">
+            <div>RP. 7.000</div>
+        </div>
+        <div class="flex-item">
+            Es Teh Manis
+            <img src="" alt="Es Teh" style="max-width: 100%; margin-top: 5px;">
+            <div>RP. 7.000</div>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th colspan="4"><u>Bukti Pemesanan</u></th>
+        </tr>
+        <tr>
+            <td colspan="2">Nama Pelayan: <b>Muhammad Aidil Saputra</b></td>
+            <td colspan="2">Tanggal Pemesanan: <input type="date"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Nama Pemesan: <b>Anta Maulana</b></td>
+            <td colspan="2">Alamat Pemesan: Jl. Merdeka No. 15, Kota Balikpapan</td>
+        </tr>
+        <tr>
+            <th class="centered"><b>Nama Menu</b></th>
+            <th class="centered"><b>Jumlah</b></th>
+            <th class="centered"><b>Harga Satuan</b></th>
+            <th class="centered"><b>Total Harga</b></th>
+        </tr>
+        <tr>
+            <td>Nasi Goreng Spesial</td>
+            <td><input type="text" value="1"> Porsi</td>
+            <td>Rp 25.000</td>
+            <td>Rp 25.000</td>
+        </tr>
+        <tr>
+            <td>Es Teh Manis</td>
+            <td><input type="text" value="1"> Gelas</td>
+            <td>Rp 7.000</td>
+            <td>Rp 7.000</td>
+        </tr>
+        <tr>
+            <th colspan="3" class="centered"><b>Total Pesanan</b></th>
+            <td>Rp 32.000</td>
+        </tr>
+        <tr>
+            <th colspan="3" class="centered"><b>Pajak</b></th>
+            <td>Rp 2.000</td>
+        </tr>
+        <tr>
+            <th colspan="3" class="centered"><b>Total Tagihan</b></th>
+            <td>Rp 34.000</td>
+        </tr>
+        <tr>
+            <td colspan="4"><b>Metode Pembayaran:</b>
+                <br>
+                <input type="radio" name="uang">Bank BCA
+                <input type="radio" name="uang">Bank BRI
+                <input type="radio" name="uang">OVO
+                <input type="radio" name="uang">GoPay
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                • Nama: Muhammad Aidil Saputra<br>
+                • NIM: 2309106042<br>
+                • Praktikum Web: <a href="https://classroom.google.com/u/1/c/NzEwMjM0NDcyMzE3/a/NzA2MTI5NDQ3Nzg5/details"><u>Posttest 2</u></a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
