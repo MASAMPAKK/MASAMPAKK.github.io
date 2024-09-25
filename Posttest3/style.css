@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.light-mode {
+    background-color: #b8e2e8; /
+    color: #333;
+}
+
+body.dark-mode {
+    background-color: #263238;
+    color: #f0f0f0;
+}
+
+
+header {
+    background-color: #c227d3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header button {
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #cdd708;
+    padding: 10px;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.hamburger {
+    display: block; 
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: black; 
+    margin: 5px 0;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+#about {
+    padding: 40px 20px;
+    background-color: #baf713;
+}
+
+footer {
+    text-align: center;
+    background-color: #da1bd4;
+    padding: 20px;
+    color: white;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 193, 5);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        background-color: #00b894;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex; 
+    }
+}
