@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto; 
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    margin: 10px auto; 
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container h3 {
+    margin-top: 40px;
+    color: #433878;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="file"] {
+    width: 97%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input[type="file"] {
+    padding: 5px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 30px auto;
+    display: block;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #433878;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #764aa8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead tr th {
+    background-color: #433878;
+    color: white;
+    text-align: center;
+}
+
+tbody tr td {
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.lihat-btn {
+    padding: 5px 10px;
+    background-color: #433878;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.lihat-btn:hover {
+    background-color: #764aa8;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+
+.ticket {
+    padding: 20px;
+    border: 2px dashed #433878;
+    border-radius: 8px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+}
+
+.ticket h3 {
+    font-size: 1.4rem;
+    color: #433878;
+    margin-bottom: 30px;
+}
+
+.ticket p {
+    margin: 5px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: start;
+}

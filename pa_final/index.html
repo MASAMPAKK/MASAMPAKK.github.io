@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/landing.css" />
+    <link rel="icon" href="assets/logo.png" />
+    <title>EventHub</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo"><a href="#">EventHub</a></div>
+      <button class="hamburger" id="hamburger">
+        <i class="ri-menu-line"></i>
+      </button>
+      <div class="nav__controls">
+        <button id="darkModeToggle" class="dark-mode-toggle">
+          <i class="ri-moon-line" id="modeIcon"></i>
+        </button>
+        <ul class="nav__links" id="navLinks">
+          <li class="nav__close">
+            <button class="close" id="closeButton">
+              <i class="ri-close-line"></i>
+            </button>
+          </li>
+          <li><a href="#event">Event</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+          <li><a href="regis.php">Masuk/Daftar</a></li>
+        </ul>
+      </div>
+    </nav>    
+    <header>
+      <div class="section__container">
+        <div class="header__content">
+          <h3>EventHub</h3>
+          <p>
+            Temukan berbagai macam event, daftar, dan hadiri event terbaik disekitarmu!
+          </p>
+          <a href="regis.php" class="button">Lihat Event</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="about" id="about">
+      <div class="section__container about__container">
+        <img src="assets/about.jpg" alt="Tentang Kami" />
+        <div class="about__content">
+          <h3>Tentang Kami</h3>
+          <p>
+            EventHub adalah platform yang hadir untuk memudahkan Anda dalam menemukan dan mendaftar 
+            ke berbagai acara menarik di sekitar Anda. Kami berdedikasi untuk memberikan pengalaman 
+            terbaik untuk pengguna.
+          </p>
+          <a href="regis.php" class="button">Daftar Sekarang</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="event" id="event">
+      <div class="section__container event__container">
+        <h3>Kategori Event</h3>
+        <div class="event__grid">
+          <div class="event__item" data-category="Musik">
+            <img src="assets/music.jpg" alt="Musik" />
+            <div class="event__overlay">Musik</div>
+          </div>
+          <div class="event__item" data-category="Bisnis">
+            <img src="assets/business.jpg" alt="Bisnis" />
+            <div class="event__overlay">Bisnis</div>
+          </div>
+          <div class="event__item" data-category="Makanan & Minuman">
+            <img src="assets/fnb.jpg" alt="Makanan & Minuman" />
+            <div class="event__overlay">Makanan & Minuman</div>
+          </div>
+          <div class="event__item" data-category="Teknologi">
+            <img src="assets/tech.jpg" alt="Teknologi" />
+            <div class="event__overlay">Teknologi</div>
+          </div>
+          <div class="event__item" data-category="Seni">
+            <img src="assets/art.jpg" alt="Seni" />
+            <div class="event__overlay">Seni</div>
+          </div>
+          <div class="event__item" data-category="Olahraga">
+            <img src="assets/sport.jpg" alt="Olahraga" />
+            <div class="event__overlay">Olahraga</div>
+          </div>
+          <div class="event__item" data-category="Hobi">
+            <img src="assets/hobby.jpg" alt="Hobi" />
+            <div class="event__overlay">Hobi</div>
+          </div>
+          <div class="event__item" data-category="Pendidikan">
+            <img src="assets/edu.jpg" alt="Pendidikan" />
+            <div class="event__overlay">Pendidikan</div>
+          </div>
+        </div>
+      </div>
+    </section>    
+
+    <footer>
+      <div class="section__container" id="kontak">
+        <h4>Terhubung dengan kami</h4>
+        <div class="social__icons">
+          <span><a href="https://www.facebook.com" target="_blank"><i class="ri-facebook-fill"></i></a></span>
+          <span><a href="https://twitter.com" target="_blank"><i class="ri-twitter-fill"></i></a></span>
+          <span><a href="https://www.instagram.com" target="_blank"><i class="ri-instagram-line"></i></a></span>
+        </div>
+        <small>&copy; Copyright 2024, EventHub</small>
+      </div>
+    </footer>    
+
+    <script src="js/main.js"></script>
+  </body>
+</html> 
